@@ -10,7 +10,6 @@ public interface UserService {
 
     User getUserById(Integer id) throws UserException;
 
-
     List<User> getAllUsers() throws UserException;
 
     User deleteUserById(Integer id) throws UserException;

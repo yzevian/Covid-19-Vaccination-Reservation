@@ -24,6 +24,12 @@ public class UserController {
     @Autowired
     public AppointmentService appointmentService;
 //    Create User
+
+    @GetMapping("/Users")
+    public List<User> findAllProducts(){
+        return usi.getAllUsers();
+    }
+
     @PostMapping("/create")
     public ResponseEntity<User> createUser(@RequestBody User user){
         return new ResponseEntity<>(usi.saveUser(user),HttpStatus.ACCEPTED);
@@ -53,7 +59,7 @@ public class UserController {
     }
     @Autowired
     public centerAddressService centerCreationService;
-    @GetMapping("GetAllCenter")
+    @GetMapping("/GetAllCenter")
     public  ResponseEntity<List<centerAddress>> getAllAddress(){
         List<centerAddress> list = centerCreationService.getAllCenterList();
         if(list!=null){

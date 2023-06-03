@@ -10,17 +10,3 @@ Hibernate: insert into hibernate_sequence values ( 1 )
 Hibernate: create table user (user_id integer not null, aadhar_no varchar(255), city varchar(255), dob datetime(6), first_name varchar(255), gender integer, last_name varchar(255), mobile varchar(255), password varchar(255), pin_code varchar(255), primary key (user_id)) engine=InnoDB
 Hibernate: create table user_login (login_ref integer not null, mobile varchar(255), password varchar(255), primary key (login_ref)) engine=InnoDB
 Hibernate: create table vaccine_storage (id integer not null, available_stock integer, centerid integer, primary key (id)) engine=InnoDB
-Hibernate: alter table appointment drop index UK_ocj7ys3racy36d4tdauqvvqp2
-Hibernate: alter table appointment add constraint UK_ocj7ys3racy36d4tdauqvvqp2 unique (user_id)
-Hibernate: alter table doctor drop index UK_5ncr3oof1ftvv6t1ie5ac4qc9
-Hibernate: alter table doctor add constraint UK_5ncr3oof1ftvv6t1ie5ac4qc9 unique (mobile)
-Hibernate: alter table dose1 drop index UK_h8cx6tww7ys916u4bn81bn8w4
-Hibernate: alter table dose1 add constraint UK_h8cx6tww7ys916u4bn81bn8w4 unique (user_id)
-Hibernate: alter table dose2 drop index UK_dahpfdw07llfuk0hau9b2pgi1
-Hibernate: alter table dose2 add constraint UK_dahpfdw07llfuk0hau9b2pgi1 unique (user_id)
-Hibernate: alter table user drop index UK_6uuf6642wus5lwkh9soh2r3v9
-Hibernate: alter table user add constraint UK_6uuf6642wus5lwkh9soh2r3v9 unique (aadhar_no)
-Hibernate: alter table user drop index UK_cnjwxx5favk5ycqajjt17fwy1
-Hibernate: alter table user add constraint UK_cnjwxx5favk5ycqajjt17fwy1 unique (mobile)
-Hibernate: alter table doctor_dose_generation add constraint FK8m5yq0mdlmy465hmogx6345vn foreign key (dose1_count_id) references dose1 (count_id)
-Hibernate: alter table doctor_dose_generation add constraint FKrpgc7brvr33k0y2to7qap5ucb foreign key (dose2_count_id) references dose2 (count_id)

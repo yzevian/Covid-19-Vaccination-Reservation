@@ -74,7 +74,7 @@ getUserById : 1
 
 Response body:
 {
-  "timestamp": "2022-06-06T01:06:20.1132752",
+  "timestamp": "2023-04-21T01:06:20.1132752",
   "message": "User does not exist with Roll :1",
   "details": "uri=/User/1"
 }
@@ -82,7 +82,7 @@ Response body:
 Response Header:
  connection: keep-alive
  content-type: application/json
- date: Sun, 05 Jun 2022 19:36:20 GMT
+ date: Sun, 21 Apr 2023 19:36:20 GMT
  keep-alive: timeout=60
  transfer-encoding: chunked
 

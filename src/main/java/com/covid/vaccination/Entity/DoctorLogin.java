@@ -14,4 +14,28 @@ public class DoctorLogin {
     private Integer loginRef;
     private String mobile;
     private String password;
+
+    public Integer getLoginRef() {
+        return loginRef;
+    }
+
+    public void setLoginRef(Integer loginRef) {
+        this.loginRef = loginRef;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

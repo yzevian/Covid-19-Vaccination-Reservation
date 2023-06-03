@@ -18,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/doctor")
 public class DoctorController {
+
     @Autowired
     private DoctorServices dsi;
     @PostMapping("/addDoctor")
